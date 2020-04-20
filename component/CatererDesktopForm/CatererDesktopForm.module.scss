@@ -1,0 +1,75 @@
+
+%full_viewport{ 
+	height: 100vh;
+	width:var(--full-screen-width);
+}
+
+%flex_column_horizontal_vertical_centering{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column; 
+}
+
+
+%buttonSide{ 
+	margin-top:25.35vh;
+	margin-bottom:35vh;
+	margin-left:30vw;
+	width:25vw; 
+	// min-width:220px;
+
+	height:10vh;
+	min-height: 90px;
+
+	border:solid 3px #6f6e6b;
+	border-color:#67655f;
+	text-align: center;
+
+	outline:none;
+	// right:3vw;
+
+	background: yellowgreen;
+	&:hover{
+		cursor: pointer;
+	}
+}
+
+
+.mobile-form{
+	z-index: 100;
+	scroll-behavior: smooth;
+	position: fixed;
+	top: 0;
+	margin:auto;
+	min-width: calc(90vw - (100vw - 100%));
+	max-height: 100vh;
+	overflow-y: auto;
+	overflow-x:auto;
+	background-color:#ccc5ac; 
+}
+
+.caterer-call-to-action-form{
+	width:calc(100vw - (100vw - 100%));
+}
+
+.form__step-button-container{
+	@extend %flex_column_horizontal_vertical_centering;
+	height:20vh;
+	flex-direction: row;
+	justify-content: space-around;
+	width:34.5vw; 
+	min-width: initial;
+}
+
+.content{
+	height:300vh;
+}
+
+.form__go-to-preceding-step-button{
+	@extend %buttonSide;
+}
+
+.form__prepare-go-to-next-step-button{
+	@extend %buttonSide;
+}
