@@ -5,7 +5,7 @@ to launch the process
 
     yarn install
 
-> go to Localhost://3600
+> go to Localhost://3000
 
 Then click on the "next step" button at the bottom of the rendering which contains "masked-input", you will see that the scrollTo's function bugg. Possibly other scroll API's functions bugg also. 
 
